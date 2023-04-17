@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Cửu Chương</title>
+</head>
+<body>
+    <script>
+        let table, i, j;
+        let m = 2, n = 1;
+        table = "<table border='1' width='1000' cellspacing='0' cellpadding='10'>"
+        for (i = 0; i < 9; i++){
+            table = table + '<tr>';
+            for (j = 0; j < 8; j++){
+                table = table + '<td>' + m + ' x ' + n + ' = ' + m*n + '</td>';
+                m++;
+            }
+            table = table + '</tr>'
+            m = 2;
+            n++;
+        }
+        table = table + '</table>';
+        document.write(table);
+    </script>
+</body>
+</html>
